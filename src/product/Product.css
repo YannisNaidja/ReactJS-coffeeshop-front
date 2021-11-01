@@ -1,0 +1,4 @@
+#product-card:hover{
+    border: 4px solid green;
+    cursor: pointer;
+}

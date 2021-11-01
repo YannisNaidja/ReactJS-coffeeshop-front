@@ -1,0 +1,38 @@
+#navbar .col-md-12 div:hover{
+ /* border-bottom: 1px solid rgb(42, 226, 42); */
+ cursor: pointer;
+ color: green;
+}
+
+
+#navbar .col-md-12 div a{
+    /* border-bottom: 1px solid rgb(42, 226, 42); */
+    cursor: pointer;
+    color: white ;
+    text-decoration: none;
+}
+
+#navbar .col-md-12 div a:hover{
+    /* border-bottom: 1px solid rgb(42, 226, 42); */
+    cursor: pointer;
+    color: green ;
+    text-decoration: none;
+}
+   
+
+#navbar .col-md-12 div::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: green;
+    transition: width .3s;
+}
+
+
+#navbar .col-md-12 div:hover::after {
+    width: 100%;
+}
+
+
+
