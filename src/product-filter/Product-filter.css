@@ -1,0 +1,15 @@
+#product-filter fieldset{
+    border-color:green!important;
+}
+
+#product-filter svg{
+    color: green!important;
+}
+
+#product-filter label{
+    color: green!important;
+}
+
+#product-filter{
+    margin-top: 15px;
+}

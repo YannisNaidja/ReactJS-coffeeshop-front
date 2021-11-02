@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { CartContent } from './cart-content/CartContent';
 import Snackbar from '@mui/material/Snackbar';
 import { Alert } from '@mui/material';
+import { ProductFilter } from './product-filter/Product-filter';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <h1>Home</h1>
           </Route>
           <Route path="/products">
+            <ProductFilter></ProductFilter>
             <ProductList openAlert={openAlert} setOpenAlert={setOpenAlert} cartItems={cartItems} setCartItems={setCartItems} 
             itemCount={itemCount} setItemCount={setItemCount}></ProductList>
           </Route>
