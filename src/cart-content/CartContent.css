@@ -1,0 +1,7 @@
+#cart-content-button{
+    background-color: green;
+}
+
+#cart-content-button:hover{
+    background-color: lightgreen;
+}

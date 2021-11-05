@@ -1,4 +1,12 @@
-h1{
+#app-title{
     text-align: center;
     color: #228B22;
+}
+
+#carousel-container{
+    margin-top: 4em;
+}
+
+#app-divider{
+    color: lightgreen;
 }

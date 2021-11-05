@@ -6,6 +6,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import './Product-filter.css';
+import Divider from '@mui/material/Divider';
+
 
 export function ProductFilter(props) {
 
@@ -111,6 +113,10 @@ export function ProductFilter(props) {
                     </FormControl>
                 </Box>
             </Col>
+            <Col>
+                <Divider className="mt-4"></Divider>
+            </Col>
+
         </Row>
     );
 }

@@ -1,0 +1,8 @@
+.carousel-status{
+    display: none;
+}
+
+.carousel-root{
+    display: flex;
+    justify-content: center;
+}

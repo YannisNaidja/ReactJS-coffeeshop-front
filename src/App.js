@@ -9,6 +9,8 @@ import { CartContent } from './cart-content/CartContent';
 import Snackbar from '@mui/material/Snackbar';
 import { Alert } from '@mui/material';
 import { ProductFilter } from './product-filter/Product-filter';
+import { CarouselCustom } from './carousel/CarouselCustom';
+import { Divider } from '@mui/material';
 
 
 function App() {
@@ -22,26 +24,29 @@ function App() {
   return (
     <Container>
       <Row className='mb-4'>
-        <h1>Crixus Coffee Shop</h1>
+        <h1 id="app-title">Crixus Coffee Shop</h1>
       </Row>
       <BrowserRouter>
         <Nav itemCount={itemCount}></Nav>
         <Switch>
           <Route path="/home">
-            <h1>Home</h1>
+            <div id='carousel-container'>
+              <CarouselCustom></CarouselCustom>
+            </div>
           </Route>
           <Route path="/products">
             <ProductFilter></ProductFilter>
-            <ProductList openAlert={openAlert} setOpenAlert={setOpenAlert} cartItems={cartItems} setCartItems={setCartItems} 
-            itemCount={itemCount} setItemCount={setItemCount}></ProductList>
+            <ProductList openAlert={openAlert} setOpenAlert={setOpenAlert} cartItems={cartItems} setCartItems={setCartItems}
+              itemCount={itemCount} setItemCount={setItemCount}></ProductList>
           </Route>
           <Route path="/about">
-            <h1>About</h1>
+            <h2>About us</h2>
           </Route>
           <Route path="/cart">
-            <h1>Cart</h1>
-            <CartContent openAlert={openAlert} setOpenAlert={setOpenAlert} cartItems={cartItems} setCartItems={setCartItems} 
-            itemCount={itemCount} setItemCount={setItemCount}></CartContent>
+            <h2>Your Cart</h2>
+            <Divider id="app-divider" className="mt-2 mb-2"></Divider>
+            <CartContent openAlert={openAlert} setOpenAlert={setOpenAlert} cartItems={cartItems} setCartItems={setCartItems}
+              itemCount={itemCount} setItemCount={setItemCount}></CartContent>
           </Route>
         </Switch>
       </BrowserRouter>

@@ -1,5 +1,7 @@
 #product-filter fieldset{
     border-color:green!important;
+    border-width: 3px;
+
 }
 
 #product-filter svg{
@@ -12,4 +14,8 @@
 
 #product-filter{
     margin-top: 15px;
+}
+
+#product-filter hr{
+    color: lightgreen;
 }
