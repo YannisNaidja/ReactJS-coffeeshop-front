@@ -1,15 +1,15 @@
 #product-filter fieldset{
-    border-color:green!important;
+    border-color:#D4AF37!important;
     border-width: 3px;
 
 }
 
 #product-filter svg{
-    color: green!important;
+    color: #D4AF37!important;
 }
 
 #product-filter label{
-    color: green!important;
+    color: #D4AF37!important;
 }
 
 #product-filter{
@@ -17,5 +17,5 @@
 }
 
 #product-filter hr{
-    color: lightgreen;
+    color:black;
 }
