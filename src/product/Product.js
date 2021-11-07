@@ -66,10 +66,10 @@ export function Product(props) {
                 </CardContent>
                 <CardActions disableSpacing>
                     {
-                        props.cartMode ? <Button size="small">Buy</Button> :
+                        !props.cartMode ? 
                             <Button onClick={() => {
                                 addToCart()
-                            }} size="small">Add to Cart</Button>
+                            }} size="small">Add to Cart</Button> : ''
                     }
                     { props.cartMode ? <Button onClick={() => {
                         removeFromCart(props.index)

@@ -8,5 +8,5 @@
 }
 
 #product-card button:hover {
-    background-color: black;
+    border: 1px solid #D4AF37;
 }

@@ -10,3 +10,12 @@
 #app-divider{
     color:#D4AF37;
 }
+
+#img-side{
+    width: 160px;
+    height: 100%;
+}
+
+#title-row img{
+    width: 10%;
+}
