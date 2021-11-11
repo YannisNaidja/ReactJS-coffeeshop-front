@@ -54,3 +54,20 @@
     color:#D4AF37!important;
 }
 
+.light-mode .MuiSwitch-thumb{
+    background-color: #D4AF37!important; 
+}
+
+.light-mode .MuiSwitch-track{
+    background-color: #D4AF37!important; 
+}
+
+.dark-mode .MuiSwitch-thumb{
+    background-color: green!important; 
+}
+
+.dark-mode .MuiSwitch-track{
+    background-color: green!important; 
+}
+
+
