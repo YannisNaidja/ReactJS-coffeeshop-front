@@ -1,7 +1,15 @@
-#cart-content-button{
+.light-mode #cart-content-button{
     background-color: #D4AF37;
 }
 
-#cart-content-button:hover{
+.light-mode #cart-content-button:hover{
     background-color:#D4AF37;
+}
+
+.dark-mode #cart-content-button{
+    background-color:green;
+}
+
+.dark-mode #cart-content-button:hover{
+    background-color:green;
 }

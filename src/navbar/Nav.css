@@ -1,7 +1,6 @@
 #navbar .col-md-12 div:hover{
  /* border-bottom: 1px solid rgb(42, 226, 42); */
  cursor: pointer;
- color: #D4AF37;
 }
 
 
@@ -15,7 +14,6 @@
 #navbar .col-md-12 div a:hover{
     /* border-bottom: 1px solid rgb(42, 226, 42); */
     cursor: pointer;
-    color: #D4AF37 ;
     text-decoration: none;
 }
    
@@ -25,13 +23,36 @@
     display: block;
     width: 0px;
     height: 2px;
-    background: #D4AF37;
     transition: width .3s;
 }
 
 
 #navbar .col-md-12 div:hover::after {
     width: 100%;
+}
+
+.light-mode #navbar .col-md-12 div::after{
+    background: #D4AF37;
+}
+
+.light-mode #navbar .col-md-12 div a:hover{
+    color: #D4AF37;
+}
+
+.light-mode #navbar .col-md-12 div:hover{
+    color: #D4AF37;
+}
+
+.dark-mode #navbar .col-md-12 div::after{
+    background: green;
+}
+
+.dark-mode #navbar .col-md-12 div a:hover{
+    color:green;
+}
+
+.dark-mode #navbar .col-md-12 div:hover{
+    color:green
 }
 
 

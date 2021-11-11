@@ -1,15 +1,29 @@
 #product-filter fieldset{
-    border-color:#D4AF37!important;
     border-width: 3px;
-
 }
 
-#product-filter svg{
+.light-mode #product-filter fieldset{
+    border-color:#D4AF37!important;
+}
+
+.dark-mode #product-filter fieldset{
+    border-color:green!important;
+}
+
+.light-mode #product-filter svg{
     color: #D4AF37!important;
 }
 
-#product-filter label{
+.light-mode #product-filter label{
     color: #D4AF37!important;
+}
+
+.dark-mode #product-filter svg{
+    color: green!important;
+}
+
+.dark-mode #product-filter label{
+    color: green!important;
 }
 
 #product-filter{

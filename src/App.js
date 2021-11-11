@@ -14,6 +14,7 @@ import { Divider } from '@mui/material';
 import statueRight from './assets/img/woman-statue-right.png';
 import statueLeft from './assets/img/caesar-statue-left.png';
 import crown from './assets/img/crown-640.png';
+import SwitchMUI from '@mui/material/Switch';
 
 
 function App() {
@@ -24,17 +25,38 @@ function App() {
     severity: "success",
     message: ""
   });
+  const [checked, setChecked] = useState(true);
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+    const element = document.body;
+    if(checked){
+      element.classList.remove("light-mode");
+      element.classList.toggle("dark-mode");
+    }else{
+      element.classList.remove("dark-mode");
+      element.classList.toggle("light-mode");
+    }
+  };
   return (
     <div>
-      <Row id="title-row" className=' justify-content-center mb-4'>
-        <img src={crown}></img>
-        <h1 id="app-title">Crixus </h1>
+      <Row>
+        <SwitchMUI
+          checked={checked}
+          onChange={handleChange}
+          inputProps={{ 'aria-label': 'controlled' }}
+        />
+      </Row>
+      <Row id="title-row" className='mb-4'>
+        <div className='centered-img-wrap'>
+          <img src={crown}></img>
+        </div>
+
       </Row>
       <BrowserRouter>
         <Nav itemCount={itemCount}></Nav>
         <Row>
           <Col className="d-flex justify-content-center" md={2}>
-          <img id="img-side" src={statueLeft}></img>
+            <img id="img-side" src={statueLeft}></img>
           </Col>
           <Col md={8}>
             <Switch>
@@ -60,7 +82,7 @@ function App() {
             </Switch>
           </Col>
           <Col className="d-flex justify-content-center" md={2}>
-          <img  id="img-side" src={statueRight}></img>
+            <img id="img-side" src={statueRight}></img>
           </Col>
         </Row>
 

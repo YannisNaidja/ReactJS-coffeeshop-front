@@ -1,12 +1,27 @@
 #product-card:hover{
-    border: 4px solid #D4AF37;
     cursor: pointer;
 }
 
- #product-card button {
+.light-mode #product-card:hover{
+    border: 4px solid #D4AF37 ;
+}
+
+.dark-mode #product-card:hover{
+    border: 4px solid green ;
+}
+
+ .light-mode #product-card button {
     color:#D4AF37!important;
 }
 
-#product-card button:hover {
+.dark-mode #product-card button {
+    color: green!important;
+}
+
+.light-mode #product-card button:hover {
     border: 1px solid #D4AF37;
+}
+
+.dark-mode #product-card button:hover {
+    border: 1px solid green;
 }
